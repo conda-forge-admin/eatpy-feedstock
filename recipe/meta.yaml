@@ -25,7 +25,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - {{ mpi }}                              # [build_platform != target_platform and mpi == "openmpi"]  As per https://conda-forge.org/docs/maintainer/knowledge_base/#cross-compilation-examples
-    - cmake
+    - cmake <4
     - make                                   # [not win]
     - {{ stdlib("c") }}
     - {{ compiler("c") }}
