@@ -27,6 +27,7 @@ requirements:
     - {{ mpi }}                              # [build_platform != target_platform and mpi == "openmpi"]  As per https://conda-forge.org/docs/maintainer/knowledge_base/#cross-compilation-examples
     - cmake <4
     - make                                   # [not win]
+    - ninja                                  # [win]
     - {{ stdlib("c") }}
     - {{ compiler("c") }}
     - {{ compiler("cxx") }}
